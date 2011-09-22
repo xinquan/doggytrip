@@ -47,10 +47,6 @@
 
 
 /* basic form pages */ 
-#basic_form
-{
-	height:500px;
-}
 #dest_intro
 {
 	border:1px solid #eee;
@@ -76,7 +72,55 @@ div#dest_intro div#intro
 
 }
 
+div#basic_form
+{
+	background-color:#efe;
+	border:1px solid #eee;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	vertical-align:text-top;
+}
+div#basic_form div
+{
+	vertical-align:top;
+}
 
+div#basic_form div.frm-heading
+{
+	width:160px;
+	display:inline-block;
+	text-align:right;
+	vertical-align:text-top;
+}
+
+div#basic_form div.frm-inputs
+{
+	width:560px;
+	display:inline-block;
+	text-align:left;
+}
+
+button.default
+{
+	font-size:1.2em;
+	border-top:1px solid #9cc;
+	border-left:1px solid #9cc;
+	border-right:2px solid #699;
+	border-bottom:2px solid #699;
+	background-color:#cee;
+	cursor:pointer;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:30px;
+	padding:3px 10px 3px 10px;
+}
+
+span.comment
+{
+	color:#666;
+	font-size:0.8em;
+}
 
 /* public layouts*/
 ul.menu{list-style:none;border:none;text-align:left;}

@@ -16,6 +16,7 @@ function indexGetMarkUp()
 				  <div>
 					 <form id="form_dest_chooser" action="/basic_form.php" method="get">
 					 <select id="select_dest_chooser" name="dest_id" onChange="document.getElementById('form_dest_chooser').submit();">
+						<option value="choose">请选择...</option>
 						<option value="maldives">马尔代夫</option>
 						<option value="fiji">斐济</option>
 						<option value="maltiues">毛里求斯</option>
