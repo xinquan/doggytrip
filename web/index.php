@@ -2,14 +2,13 @@
 function indexGetMarkUp()
 {
 		return <<<HTML
-			   <!--
-			   realcontent goes here
-			   -->
-			   <div id="how_it_works" style="height:225px; vertical-align:middle; text-align:center; width:450px; border:1px solid #eee;">
+			   <div id="how_it_works">
+					<div style="vertical-align:middle; height:200px; margin-top:120px;">	
 				  How it works <br/>
 				  Gonna put a video here.
+				  	</div>
 			   </div>
-			   <div id="place_chooser" style="height:100px;">
+			   <div id="place_chooser">
 				  <div>
 					 <h2>你想去哪里？</h2>
 				  </div>

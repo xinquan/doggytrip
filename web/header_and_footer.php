@@ -24,6 +24,15 @@
 
 	<body> 
 		<div id="page">
+			<div id="header-wrapper">
+				<div id="header">
+
+					<ul class="menu">
+						<li class="leaf"><a href="/">DoggyTrip Home</a></li>
+					</ul>
+				</div> 
+			</div> <!-- /page/header-wrapper -->
+
 			<div id="header">
 
 
@@ -32,7 +41,7 @@
 			</div> <!-- /page/header -->
 
 
-			<div id="container" class="clear-block" style="padding-left:450px;">
+			<div id="container">
 
 
 HTML;
@@ -41,18 +50,12 @@ HTML;
    {
 	  return <<<HTML
 
-				<div style="clear:both"></div> <!-- fixes both short right and left sidebar -->
 
 			 </div> <!-- /page/container -->
 
 
-		<div id="footer-wrapper" class="clear-block">
+		<div id="footer-wrapper">
 			<div id="footer">
-
-
-				<div id="block-menu-93" class="block block-menu">  
-					<div class="blockinner">
-						<div class="content clear-block">
 
 							<ul class="menu">
 								<li class="leaf"><a href="/travel-guide">Travel Guide</a></li>
@@ -61,9 +64,6 @@ HTML;
 								<li class="leaf"><a href="/blogs" title="Blog">Blog</a></li>
 
 							</ul>
-						</div>    
-					</div>
-				</div>
 			</div> 
 		</div> <!-- /page/footer-wrapper -->
 

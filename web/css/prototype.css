@@ -1,26 +1,64 @@
 
 /* .clear-block:after{content:".";display:block;height:0;clear:both;visibility:hidden;} */
-.clear-block{display:inline-block;}
+/*.clear-block{display:inline-block;}*/
 /* Hides from IE-mac \*/
+
 * html .clear-block{height:1%;}
 .clear-block{display:block;}
 
-#footer{float:none;clear:both;}
+#header-wrapper,#container,#footer-wrapper{
+	margin:0px auto;
+	width:980px;
+}
 
-#footer-wrapper{margin:0px;background-color:#a5cc7a;}
+#header{float:none;clear:both;}
+#header-wrapper{background-color:#a5cc7a;}
+#header{margin:0px;padding:5px 0px 5px 15px;}
+#header a{color:#ffffff;font-weight:normal;}
+#header ul{margin:0px;padding:0px;display:inline;}
+#header ul li{padding:0px 10px 0px 0px;list-style:none;display:inline;}
+
+
+#footer{float:none;clear:both;}
+#footer-wrapper{background-color:#a5cc7a;}
 #footer{margin:0px;padding:5px 0px 5px 15px;}
-#footer .block{margin:0px;padding:0px;}
-#footer .block .content{margin:0px;padding:0px;}
 #footer a{color:#ffffff;font-weight:normal;}
 #footer ul{margin:0px;padding:0px;display:inline;}
 #footer ul li{padding:0px 10px 0px 0px;list-style:none;display:inline;}
 
-ul.menu{list-style:none;border:none;text-align:left;}
-ul.menu li{margin:0 0 0 0.5em;}
-h1,h2,h3,h4,h5,h6,body{margin:0.4em 0;font-family:Arial,Helvetica,sans-serif;}
-
+/* index pages */ 
+#how_it_works
+{
+	width:450px; 
+	height:225px; 
+	margin-left:200px;
+	text-align:center; 
+	border:1px solid #eee;
+}
+#place_chooser
+{
+	width:450px;
+	height:225px;
+	margin-left:200px;
+	padding-left:50px;
+	padding-top:50px;
+}
 #select_place_chooser option{font-size:2em; color:red;}
 
+
+/* basic form pages */ 
+#basic_form
+{
+	height:500px;
+}
+#dest_intro
+{
+	border:1px solid #eee;
+	min-height:160px;
+	padding-left:20px;
+	padding-bottom:10px;
+
+}
 div#dest_intro div#image
 {
 	width:100px;
@@ -28,18 +66,28 @@ div#dest_intro div#image
 }
 div#dest_intro div#image img
 {
-	width:150px;
+	width:120px;
+	height:90px;
 }
 div#dest_intro div#intro
 {
-	margin-left:160px;
+	margin-left:150px;
 	padding-right:40px;
 
 }
+
+
+
+/* public layouts*/
+ul.menu{list-style:none;border:none;text-align:left;}
+ul.menu li{margin:0 0 0 0.5em;}
+h1,h2,h3,h4,h5,h6,body{margin:0.4em 0;font-family:Arial,Helvetica,sans-serif;}
+
+
 span.sharp_num{
-color:red;
-font-family:Georgia;
-font-size:1.2em;
-margin-left:6px;
-margin-right:6px;
+	color:red;
+	font-family:Georgia;
+	font-size:1.2em;
+	margin-left:6px;
+	margin-right:6px;
 }

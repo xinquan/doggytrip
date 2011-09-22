@@ -8,7 +8,7 @@ function basicFormGetMarkUp()
 		return <<<HTML
 			<div id="dest_intro">
 				<div id="title">
-					<h2>{$dest['name']}</h2>
+					<h3>{$dest['name']}</h3>
 				</div>
 				<div id="image">
 					<img src="{$dest['image']}" />
@@ -16,6 +16,8 @@ function basicFormGetMarkUp()
 				<div id="intro">
 					{$dest['intro']}
 				</div>
+			</div>
+			<div id="basic_form">
 			</div>
 HTML;
 }
