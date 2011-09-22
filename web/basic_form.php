@@ -25,7 +25,7 @@ function basicFormGetMarkUp()
 					<div>
 						<div class="frm-heading">怎么称呼你：</div>
 						<div class="frm-inputs">
-							<input name="realname"/>
+							<input name="realname" placeholder="真实姓名"/>
 							<select name="realname.title">
 								<option value="m">先生</option>
 								<option value="f">女士</option>
