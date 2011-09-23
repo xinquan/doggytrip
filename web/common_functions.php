@@ -1,13 +1,29 @@
 <?php
-function secureGetParam($param, $method)
+function secureGetParam($param, $method = NULL)
 {
 	//TODO
-	return $_GET["$param"];
+	if('GET'==$method)
+	{
+		return $_GET["$param"];
+	}else if ('POST' == $method)
+	{
+		return $_POST["$param"];
+	}else if (NULL == $methog)
+	{
+		$ret = $_GET[$param];
+		if(!empty($_POST[$param]))
+			$ret = $_POST[$param];
+		return $ret;
+
+	}
 }
-function print_d($var)
+function print_d($varvalue, $varname = NULL)
 {
-	$var_info = var_export($var, TRUE);
-	error_log($var_info);
+	echo "<pre>";
+	if(!empty($varname))
+		echo "dumping $varname:";
+	print_r($varvalue);
+	echo "</pre>";
 }
 
 ?>

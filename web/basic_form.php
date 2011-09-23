@@ -1,10 +1,10 @@
 <?php
 function basicFormGetMarkUp()
 {
-		$dest_id = secureGetParam('dest_id','GET');
+		$dest_id = secureGetParam('dest_id');
 		$dest = getDestnationInfo($dest_id);
-		print_d($dest);
-		print_d($dest_id);
+		//print_d($dest);
+		//print_d($dest_id);
 		return <<<HTML
 			<div id="dest_intro">
 				<div id="title">
@@ -26,7 +26,7 @@ function basicFormGetMarkUp()
 						<div class="frm-heading">怎么称呼你：</div>
 						<div class="frm-inputs">
 							<input name="realname" placeholder="真实姓名"/>
-							<select name="realname.title">
+							<select name="gender">
 								<option value="m">先生</option>
 								<option value="f">女士</option>
 							</select>
@@ -35,7 +35,7 @@ function basicFormGetMarkUp()
 					<div>
 						<div class="frm-heading">一共几人：</div>
 						<div class="frm-inputs">
-							<input size="4" name="num_adults"/> 个成人，<input size="4" name="num_child"/>个小孩（12岁以下）
+							<input size="4" name="num_adults"/> 个成人，<input size="4" name="num_children"/>个小孩（12岁以下）
 						</div>
 					</div>
 					<div>
@@ -109,6 +109,7 @@ function basicFormGetMarkUp()
 						<div class="frm-inputs">
 							<button type="submit" class="default">O了，提交我的信息 &gt;</button>
 						</div>
+						<input type="hidden" name="dest_id" value="$dest_id">
 					</div>
 				</form>
 			</div>

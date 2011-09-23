@@ -97,7 +97,7 @@ div#dest_intro div#intro
 
 }
 
-div#basic_form
+div#basic_form,div#detail_form
 {
 	background-color:#efe;
 	border:1px solid #eee;
@@ -106,14 +106,14 @@ div#basic_form
 	padding:10px;
 	vertical-align:text-top;
 }
-div#basic_form div
+div#basic_form,div#detail_form div
 {
 	vertical-align:top;
 	padding-top:2px;
 	padding-bottom:2px;
 }
 
-div#basic_form div.frm-heading
+div#basic_form,div#detail_form div.frm-heading
 {
 	width:160px;
 	display:inline-block;
@@ -121,11 +121,19 @@ div#basic_form div.frm-heading
 	vertical-align:text-top;
 }
 
-div#basic_form div.frm-inputs
+div#basic_form,div#detail_form div.frm-inputs
 {
 	width:560px;
 	display:inline-block;
 	text-align:left;
+}
+div.success-frame{
+	background-color:#eec;
+	border:1px solid #eee;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	vertical-align:text-top;
 }
 
 button.default
