@@ -33,12 +33,6 @@ function basicFormGetMarkUp()
 						</div>
 					</div>
 					<div>
-						<div class="frm-heading">此次旅行的总预算：</div>
-						<div class="frm-inputs">
-							<input size="6" name="budget"/> RMB 每人（所有花费，包含机票、酒店、签证等）
-						</div>
-					</div>
-					<div>
 						<div class="frm-heading">一共几人：</div>
 						<div class="frm-inputs">
 							<input size="4" name="num_adults"/> 个成人，<input size="4" name="num_child"/>个小孩（12岁以下）
@@ -50,7 +44,7 @@ function basicFormGetMarkUp()
 							<select name="trip_status" onChange="var ov=document.getElementById('ovodc');if(this.value=='dc'){ov.style.display='block';}else{ov.style.display='none';}">
 								<option value="dc">我有确切的计划和出发时间，万事具备，只欠旅行社的给力推荐和报价了</option>
 									<!-- date clear -->
-								<option value="dnc">{$dest['name']}是我最近想去的地方，不过目前我还没有具体的时间计划</option>
+								<option value="dnc" selected>{$dest['name']}是我最近想去的地方，不过目前我还没有具体的时间计划</option>
 									<!-- date not clear -->
 								<option value="dd">{$dest['name']}是我梦想的旅行地，虽然现在没时间和闲钱，但先研究以下行情总是好的</option>
 									<!-- dreaming dest -->
@@ -59,7 +53,7 @@ function basicFormGetMarkUp()
 							</select>
 						</div>
 					</div>
-					<div id="ovodc">
+					<div id="ovodc" style="display:none;">
 						<!-- only visiable on date clear -->
 						<div>
 							<div class="frm-heading">旅行时间：</div>
@@ -79,13 +73,19 @@ function basicFormGetMarkUp()
 									<option value="7">8天7晚</option>
 									<option value="8">9天8晚</option>
 									<option value="9">10天9晚</option>
-									<option value="10+">超过10晚（你一定很有钱）</option>
+									<option value="10+">10晚以上（米人，羡慕ing）</option>
 								</select>
 							</div>
 						</div>
 						
 					</div>
 					</div> <!-- ovodc -->
+					<div>
+						<div class="frm-heading">此次旅行的总预算：</div>
+						<div class="frm-inputs">
+							<input size="6" name="budget"/> RMB 每人（所有花费，包含机票、酒店、签证等）
+						</div>
+					</div>
 					<div>
 						<div class="frm-heading">你的联系方式：</div>
 						<div class="frm-inputs">
