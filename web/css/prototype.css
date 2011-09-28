@@ -113,17 +113,17 @@ div#basic_form,div#detail_form div
 	padding-bottom:2px;
 }
 
-div#basic_form,div#detail_form div.frm-heading
+div.frm-heading
 {
-	width:160px;
+	width:200px;
 	display:inline-block;
 	text-align:right;
 	vertical-align:text-top;
 }
 
-div#basic_form,div#detail_form div.frm-inputs
+div.frm-inputs
 {
-	width:560px;
+	width:520px;
 	display:inline-block;
 	text-align:left;
 }

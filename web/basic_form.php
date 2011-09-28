@@ -2,7 +2,7 @@
 function basicFormGetMarkUp()
 {
 		$dest_id = secureGetParam('dest_id');
-		$dest = getDestnationInfo($dest_id);
+		$dest = getDestinationInfo($dest_id);
 		//print_d($dest);
 		//print_d($dest_id);
 		return <<<HTML
@@ -25,7 +25,7 @@ function basicFormGetMarkUp()
 					<div>
 						<div class="frm-heading">怎么称呼你：</div>
 						<div class="frm-inputs">
-							<input name="realname" placeholder="真实姓名"/>
+							<input name="real_name" placeholder="真实姓名"/>
 							<select name="gender">
 								<option value="m">先生</option>
 								<option value="f">女士</option>
@@ -65,7 +65,7 @@ function basicFormGetMarkUp()
 						<div>
 							<div class="frm-heading">在{$dest['name']}停留的时间：</div>
 							<div class="frm-inputs">
-								<select name="num_nights">
+								<select name="trip_length">
 									<option value="3">4天3晚</option>
 									<option value="4">5天4晚</option>
 									<option value="5">6天5晚</option>
@@ -101,15 +101,15 @@ function basicFormGetMarkUp()
 					<div>
 						<div class="frm-heading">其它补充信息：</div>
 						<div class="frm-inputs">
-							<textarea name="extra_information" rows="8" cols="60">你可以在这里注明其它的信息，例如你是否已经购买了机票、你是否已经办理了护照等。</textarea>
+							<textarea name="extra_information" rows="8" cols="60" placeholder="你可以在这里注明其它的信息，例如你是否已经购买了机票、你是否已经办理了护照等。"></textarea>
 						</div>
 					</div>
 					<div>
 						<div class="frm-heading"></div>
 						<div class="frm-inputs">
-							<button type="submit" class="default">O了，提交我的信息 &gt;</button>
-						</div>
 						<input type="hidden" name="dest_id" value="$dest_id">
+							<button type="submit" class="default">O了，提交我的需求 &gt;</button>
+						</div>
 					</div>
 				</form>
 			</div>
