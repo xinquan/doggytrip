@@ -20,6 +20,7 @@ function do_mysqli_connection()
 		printf("Connect failed: %s\n", mysqli_connect_error());
 		exit();
 	}
+	$mysqli->autocommit(true);
 	return $mysqli;
 
 }
@@ -42,7 +43,11 @@ function do_mysqli_fetch_array($sql)
 function do_mysqli_update_db($sql)
 {
 	$mysqli = do_mysqli_connection();
-	$result = $mysqli->query($sql);
+
+	if (!$mysqli->query($sql)) {
+		printf("Error: %s\n", $mysqli->error);
+	}
+	//$mysqli->commit();
 	return $mysqli->affected_rows;
 }
 
